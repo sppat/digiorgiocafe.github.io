@@ -1,37 +1,255 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: #D8C7B0;
+	background-color: #605b51;
 }
 
 header {
-  width: 100vw;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.logo, .logo-container {
-  width: 220px;
-  height: 140px;
+.logo,
+.logo-container {
+	width: 150px;
+	height: 100px;
 }
 
 .title-container {
-  background-image: url(/assets/images/shop.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  aspect-ratio: 16/9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	background-image: url(/assets/images/coffees.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.title-container h1 {
-  color: #fff;
+.title-background {
+	border: 2px solid #fff;
+	padding: 3rem;
+	border-radius: 1rem;
+}
+
+.title {
+	margin-bottom: 0.5rem;
+}
+
+.title-container p {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+.title,
+.title-container p {
+	text-align: center;
+	color: #fff;
+}
+
+.products-container {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product {
+	width: 75%;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.product img {
+	width: 200px;
+	height: 200px;
+	border-radius: 6rem;
+	border: 1px solid #fff;
+	margin-bottom: 0.5rem;
+}
+
+.product-name {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.info-container {
+	width: 100vw;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.map-container {
+	width: 100%;
+	height: 75%;
+}
+
+.opening-hours {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 1rem;
+	margin-top: 1rem;
+}
+
+.opening-day {
+	text-align: left;
+	padding-right: 1px;
+}
+
+footer {
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	border-top: 1px solid #fff;
+	margin-top: 1rem;
+}
+
+@media screen and (min-width: 400px) {
+  .title-container {
+		height: 500px;
+		margin-bottom: 5px;
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 150px;
+  }
+
+  .logo,
+  .logo-container {
+    width: 200px;
+    height: 150px;
+  }
+
+  .title-container {
+    height: 500px;
+    margin-bottom: 5px;
+    background-size: cover;
+  }
+
+  .title-background {
+    padding: 10rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .title-container p {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .title,
+  .title-container p {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 900px) {
+	header {
+		height: 200px;
+	}
+
+  .title-container {
+		height: 800px;
+		margin-bottom: 5px;
+		background-size: cover;
+	}
+
+	.opening-hours {
+		width: 60%;
+	}
+
+	table {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.logo,
+	.logo-container {
+		width: 300px;
+		height: 200px;
+	}
+
+	.title-container {
+		height: 800px;
+		margin-bottom: 5px;
+		background-size: cover;
+	}
+
+	.title-background {
+		padding: 15rem;
+	}
+
+	.title {
+		font-size: 4rem;
+	}
+
+	.title-container p {
+		font-weight: 600;
+		font-size: 2rem;
+	}
+
+	.title,
+	.title-container p {
+		text-align: center;
+		color: #fff;
+	}
+
+	.products {
+		margin: 5rem 0;
+	}
+
+	.products-container {
+		width: 100vw;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.product {
+		width: 75%;
+		text-align: center;
+		margin: 5px 0;
+	}
+
+	.map-container {
+		width: 90%;
+	}
+
+	.opening-hours {
+		width: 60%;
+	}
+
+	table {
+		text-align: center;
+		width: 100%;
+	}
 }
