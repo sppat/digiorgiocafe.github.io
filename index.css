@@ -23,7 +23,7 @@ header {
 }
 
 .title-container {
-	background-image: url(/assets/images/coffees.jpg);
+	background-image: url(assets/images/coffees.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
