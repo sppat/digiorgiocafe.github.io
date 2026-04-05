@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #D8C7B0;
+}
+
+header {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo, .logo-container {
+  width: 220px;
+  height: 140px;
+}
+
+.title-container {
+  background-image: url(/assets/images/shop.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container h1 {
+  color: #fff;
+}
